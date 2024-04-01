@@ -25,8 +25,8 @@ df_encoded = pd.concat([df.drop('ID', axis=1).reset_index(drop=True), df_encoded
 #test
 joblib.dump(encoder, 'encoder.save')
 
-X = df_encoded.drop(['Anomaly','Speed','Time', 'No. Veh'], axis=1)
-#X = df_encoded.drop(['Anomaly','Time'], axis=1)
+#X = df_encoded.drop(['Anomaly','Speed','Time', 'No. Veh'], axis=1)
+X = df_encoded.drop(['Anomaly','Time'], axis=1)
 #print(X.head())
 print("Shape of the encoded DataFrame:", X.shape)
 print(X.head())
