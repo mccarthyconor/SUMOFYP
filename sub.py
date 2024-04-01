@@ -38,7 +38,7 @@ def sendMail(subject,message):
     # SMTP server setup
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    app_password = "zcosrrtudvhauquu" 
+    app_password = " " 
     server.login(email, app_password)
     # Send email
     server.sendmail(email, receiver_email, text)
